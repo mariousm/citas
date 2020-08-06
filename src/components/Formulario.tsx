@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import * as uuid from "uuid";
+import PropTypes from "prop-types";
 
 const Formulario = ({ crearCita }: any) => {
   // Crear el state de cita
@@ -124,5 +125,9 @@ const Formulario = ({ crearCita }: any) => {
     </Fragment>
   );
 };
+
+Formulario.propTypes = {
+  crearCita: PropTypes.func.isRequired
+}
 
 export default Formulario;
